@@ -87,7 +87,7 @@ body {
   fill: var(--hover-blue);
 }
 
-.contact-text .contact-icons {
+.contact-icons {
   margin-right: 10px;
   fill: var(--light-gray)
 }
