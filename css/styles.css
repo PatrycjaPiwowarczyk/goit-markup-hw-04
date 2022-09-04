@@ -77,14 +77,10 @@ body {
 
 .contact-text:hover {
   color: var(--hover-blue);
-  text-decoration: underline;
-  fill: var(--hover-blue);
 }
 
 .contact-text:focus {
   color: var(--hover-blue);
-  text-decoration: underline;
-  fill: var(--hover-blue);
 }
 
 .contact-icons {
@@ -92,11 +88,13 @@ body {
   fill: var(--light-gray)
 }
 
-.contact-text .contact-icons:hover,
-.contact-text .contact-icons:focus {
+.contact-hover:hover,
+.contact-hover:focus {
   color: var(--hover-blue);
-  fill: var(--hover-blue)
+  text-decoration: underline;
+  fill: var(--hover-blue);
 }
+
 
 .logo {
   font-family: "Raleway";
@@ -586,10 +584,11 @@ fill: var(--social-icon-gray);
 .logo-box:focus {
   border: 1px solid var(--hover-blue);
   border-radius: 4px;
+  fill: var(--hover-blue);
   }
 
-.logo-box .logo-hover:hover,
-.logo-box .logo-hover:hover {
+.logo-hover:hover,
+.logo-hover:hover {
   fill: var(--hover-blue);
 }
 
@@ -663,6 +662,12 @@ fill: var(--social-icon-gray);
   background: var(--just-white);
   border: 1px solid #eeeeee;
 }
+
+.images-section:hover,
+.images-section:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .image-description {
   font-style: normal;
