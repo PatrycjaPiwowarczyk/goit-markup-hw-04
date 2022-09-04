@@ -588,8 +588,8 @@ fill: var(--social-icon-gray);
   border-radius: 4px;
   }
 
-  .logo-hover:hover,
-  .logo-hover:focus {
+  .logo-box .logo-hover:hover,
+  .logo-box .logo-hover:focus {
     fill: var(--hover-blue);
   }
 
