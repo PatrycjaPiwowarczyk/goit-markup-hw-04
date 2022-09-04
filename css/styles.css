@@ -7,6 +7,7 @@
   --just-gray: #2f303a;
   --background-light-gray: #f5f4fa;
   --background-gray: #e5e5e5;
+  --social-icon-gray: #AFB1B8;
 }
 
 *,
@@ -77,11 +78,18 @@ body {
 .contact-text:hover {
   color: var(--hover-blue);
   text-decoration: underline;
+  fill: var(--hover-blue);
 }
 
 .contact-text:focus {
   color: var(--hover-blue);
   text-decoration: underline;
+  fill: var(--hover-blue);
+}
+
+
+.contact-text .contact-icons {
+  margin-right: 10px;
 }
 
 .logo {
@@ -158,6 +166,7 @@ body {
   height: 31px;
   text-decoration: none;
   margin-top: 60px;
+  display: flex;
 }
 
 .address {
@@ -216,6 +225,52 @@ body {
   margin-bottom: 60px;
 }
 
+.footer-column{
+  display: flex;
+  flex-direction: row
+}
+
+.footer-social{width: 206px;
+  height: 80px;
+  margin-top: 72px;
+  margin-left: 70px;
+
+}
+
+.footer-text-heading{font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--just-white); 
+}
+
+.social-icon-box-footer {
+  display:flex;
+  width: 206px;
+  height: 44px;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.social-icon-footer {
+  height: 44px;
+  width: 44px;
+  border-radius: 0px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--just-white);
+}
+
+.social-icon-footer:hover {
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
+  background-color: var(--hover-blue);
+  fill: var(--just-white);
+}
+
+
 /* FOOTER-END */
 
 /* DARK-GRAY-SECTION */
@@ -260,12 +315,6 @@ body {
   align: center;
 }
 
-.background-dark-gray-section {
-  display: flex;
-  justify-content: center;
-  background-color: var(--just-gray);
-}
-
 .dark-gray-section {
   display: flex;
   justify-content: center;
@@ -273,9 +322,32 @@ body {
   align-items: center;
 }
 
+.background-image {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url("../images/overlay.jpg");
+}
+
+.background-dark-gray-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--just-gray);
+}
+
+
 /* DARK-GRAY-SECTION-END */
 
 /* MAIN-SECTION */
+
 
 .background-main-section {
   display: flex;
@@ -288,6 +360,17 @@ body {
 }
 
 /* TEXT-SECTION */
+
+.icon-box {
+background-color: var(--background-light-gray);
+margin-bottom: 30px;
+width: 270px;
+height: 120px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 
 .text-heading {
   font-style: normal;
@@ -304,7 +387,6 @@ body {
 .text3,
 .text4 {
   width: 270px;
-  height: 101px;
 }
 
 .text-section .text {
@@ -318,9 +400,9 @@ body {
   height: 75px;
 }
 
-.text-section {
+/* .text-section {
   display: flex;
-}
+} */
 
 .list1 {
   flex-wrap: wrap;
@@ -393,7 +475,7 @@ body {
 
 .gray-section-box {
   width: 270px;
-  height: 368px;
+  height: 428px;
   background: var(--just-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -433,7 +515,68 @@ body {
   margin-right: auto;
 }
 
+.social-icon-box {
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 10px;
+  
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--just-white);
+}
+
+.social-icon:hover, 
+.social-icon:focus {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--hover-blue);
+  border: var(--hover-blue);
+  fill: var(--just-white);
+}
+
 /* GRAY-SECTION-END */
+
+
+/* CLIENTS-SECTION */
+
+.background-clients-section {
+  display: flex;
+  justify-content: center;
+  background: var(--just-white);
+}
+
+.logo-box{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.clients-box {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.logo-box:hover{border: 1px solid var(--hover-blue);
+  border-radius: 4px;
+fill: var(--hover-blue);
+}
+
+/* CLIENTS-SECTION-END */
 
 /* PORTFOLIO-MAIN */
 
@@ -545,3 +688,5 @@ body {
 }
 
 PORTFOLIO-MAIN-END
+
+
