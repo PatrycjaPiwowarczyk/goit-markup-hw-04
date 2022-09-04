@@ -77,10 +77,12 @@ body {
 
 .contact-text:hover {
   color: var(--hover-blue);
+  fill: var(--hover-blue);
 }
 
 .contact-text:focus {
   color: var(--hover-blue);
+  fill: var(--hover-blue);
 }
 
 .contact-icons {
