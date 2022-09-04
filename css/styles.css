@@ -92,8 +92,8 @@ body {
   fill: var(--light-gray)
 }
 
-.contact-text:hover,
-.contact-text:focus {
+.contact-text .contact-icons:hover,
+.contact-text .contact-icons:focus {
   color: var(--hover-blue);
   fill: var(--hover-blue)
 }
