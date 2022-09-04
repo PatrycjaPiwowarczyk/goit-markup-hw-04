@@ -578,7 +578,7 @@ justify-content: center;
   gap: 30px;
 }
 
-.logo-box .logo-hover{
+.logo-box{
 fill: var(--social-icon-gray);
 }
 
@@ -586,13 +586,8 @@ fill: var(--social-icon-gray);
 .logo-box:focus {
   border: 1px solid var(--hover-blue);
   border-radius: 4px;
+  fill: var(--hover-blue);
   }
-
-  .logo-box .logo-hover:hover,
-  .logo-box .logo-hover:focus {
-    fill: var(--hover-blue);
-  }
-
 
 /* CLIENTS-SECTION-END */
 
