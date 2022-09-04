@@ -87,9 +87,14 @@ body {
   fill: var(--hover-blue);
 }
 
-
 .contact-text .contact-icons {
   margin-right: 10px;
+  fill: var(--light-gray)
+}
+
+.contact-text .contact-icons:hover,
+.contact-text .contact-icons:focus {
+  fill: var(--hover-blue)
 }
 
 .logo {
@@ -530,6 +535,7 @@ justify-content: center;
   height: 44px;
   border-radius: 50%;
   background-color: var(--just-white);
+  fill: var(--social-icon-gray);
 }
 
 .social-icon:hover, 
@@ -571,10 +577,16 @@ justify-content: center;
   gap: 30px;
 }
 
-.logo-box:hover{border: 1px solid var(--hover-blue);
-  border-radius: 4px;
-fill: var(--hover-blue);
+.logo-box .logo-hover{
+fill: var(--social-icon-gray);
 }
+
+.logo-box .logo-hover:hover,
+.logo-box .logo-hover:focus {
+  fill: var(--hover-blue);
+  border: 1px solid var(--hover-blue);
+  border-radius: 4px;
+  }
 
 /* CLIENTS-SECTION-END */
 
