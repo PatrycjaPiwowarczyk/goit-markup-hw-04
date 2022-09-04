@@ -582,8 +582,8 @@ justify-content: center;
 fill: var(--social-icon-gray);
 }
 
-.logo-box:hover,
-.logo-box:focus {
+.logo-box .logo-hover:hover,
+.logo-box .logo-hover:focus {
   fill: var(--hover-blue);
   border: 1px solid var(--hover-blue);
   border-radius: 4px;
