@@ -73,12 +73,13 @@ body {
   line-height: 100%;
   letter-spacing: 0.02em;
   color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-icons {
   margin-right: 10px;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact-text {  
