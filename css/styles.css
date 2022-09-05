@@ -75,23 +75,16 @@ body {
   color: var(--light-gray);
 }
 
-.contact-text:hover {
-  color: var(--hover-blue);
-  fill: var(--hover-blue);
-}
-
-.contact-text:focus {
-  color: var(--hover-blue);
-  fill: var(--hover-blue);
-}
-
 .contact-icons {
   margin-right: 10px;
+}
+
+.contact-text {  
   fill: var(--light-gray)
 }
 
-.contact-hover:hover,
-.contact-hover:focus {
+.contact-text:hover,
+.contact-text:focus {
   color: var(--hover-blue);
   text-decoration: underline;
   fill: var(--hover-blue);
@@ -578,7 +571,7 @@ justify-content: center;
   gap: 30px;
 }
 
-.logo-hover{
+.logo-box{
 fill: var(--social-icon-gray);
 }
 
@@ -589,10 +582,6 @@ fill: var(--social-icon-gray);
   fill: var(--hover-blue);
   }
 
-.logo-hover:hover,
-.logo-hover:hover {
-  fill: var(--hover-blue);
-}
 
 /* CLIENTS-SECTION-END */
 
