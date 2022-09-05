@@ -77,6 +77,8 @@ body {
 
 .contact-icons {
   margin-right: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-text {  
@@ -267,6 +269,7 @@ body {
   border-radius: 50px;
   background-color: var(--hover-blue);
   fill: var(--just-white);
+  cursor: pointer;
 }
 
 
@@ -298,9 +301,17 @@ body {
   border-radius: 4px;
   border-color: var(--hover-blue);
   box-shadow: 0px 4px 4px 0px #00000026;
-  cursor: pointer;
   margin-bottom: 106px;
 }
+
+.button1:hover, 
+.button1:focus {
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  background: var();
+}
+
 
 .button1-text {
   width: 117px;
@@ -322,7 +333,9 @@ body {
 }
 
 .background-image {
-  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  width: 1600px;
   height: 600px;
   margin: 0 auto;
   background-size: cover;
@@ -540,6 +553,7 @@ justify-content: center;
   background-color: var(--hover-blue);
   border: var(--hover-blue);
   fill: var(--just-white);
+  cursor: pointer;
 }
 
 /* GRAY-SECTION-END */
