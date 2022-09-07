@@ -17,6 +17,15 @@
   </head>
   <body>
     <div class="body-container">
+      <div class="backdrop" data-modal>
+        <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>
+            <svg width="11" height="11">
+              <use href="images/icons.svg/sprite.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="background-header">
         <div class="container">
           <header class="header">
@@ -63,7 +72,8 @@
             <div class="container">
               <div class="dark-gray-section section">
                 <h1 class="up-button-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button class="button1" type="button">
+
+                <button class="button1 modal-btn" type="button" data-modal-open>
                   <span class="button1-text">Zamów usługę</span>
                 </button>
               </div>
@@ -350,5 +360,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
